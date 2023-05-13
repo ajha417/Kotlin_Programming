@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
     var car = Cars()
     car.no_of_wheels = 4
-    car.model = "Mercedez Benz"
+//    car.model = "Mercedez Benz"
     car.runs()
     car.speed = 120
     car.drift()
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 
 open class Vehicle{
     var no_of_wheels:Int = -1
-    var model:String = ""
+    open var model:String = "default model"
 
 
     open fun runs(){
@@ -21,7 +21,7 @@ open class Vehicle{
 
 class Cars:Vehicle(){
     var speed:Int = -1
-
+    override var model:String = "new model"
 //    by default all methods are public final
 //    now to override we need to use open keyword in parent class and override keyword in child class
     fun drift(){
