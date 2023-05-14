@@ -8,4 +8,17 @@ fun main(args: Array<String>) {
         println(leaders.get(key))
     }
 
+    var cars = HashMap<Int,String>() //this is mutable, read and write both, no fixed size
+
+//    besides these are also two mutable hashmap
+    /*var cars1 = mutableMapOf<Int,String>()
+    var cars2 = hashMapOf<Int,String>()
+*/
+    cars.put(1,"Mercedez")
+    cars.put(2,"Kia")
+    cars.put(3,"scorpio")
+
+    for(car in cars.keys){
+        println("car at $car is ${cars.get(car)}")
+    }
 }
