@@ -18,12 +18,12 @@ open class MyClass{
 
 
 object CustomerData:MyClass(){
-    var count:Int = -1
-    fun typeOfCustomer():String{
+    var count:Int = -1              //  Behave like   STATIC variable
+    fun typeOfCustomer():String{        //      Behaves like STATIC method
         return "VIP Customer"
     }
 
-    override fun superClassMethod(str: String){
+    override fun superClassMethod(str: String){     // Currently, behaves like STATIC method
         super.superClassMethod(str)
         println("Object customerData:"+str)
     }
