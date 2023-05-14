@@ -5,6 +5,16 @@ fun main(args: Array<String>) {
 //    the given list is immutable list, it has fixed size and data can be read only
     var games = listOf<String>("Cricket","Football","Badminton","Tennis")
 //    games[0] = "ajfdk"  this will give error as it is trying to write an element
+
+
+    var players:ArrayList<String> = ArrayList<String>()
+    players.add("Dhoni")
+    players.add("Kohli")
+    for(player in players){
+        println(player)
+    }
+    println()
+
     for(e in games){
         println(e)
     }
