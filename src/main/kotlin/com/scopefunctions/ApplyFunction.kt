@@ -19,4 +19,12 @@ fun main(args: Array<String>) {
         println(name)
         println(age)
     }
+
+
+//    perform some operation on Person2
+
+    person.also {
+        it.name = "Smart Programmer"
+        println("New name is ${it.name}")
+    }
 }
